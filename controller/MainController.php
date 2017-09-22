@@ -10,7 +10,7 @@ require __DIR__ .'/../config/view.php';
 /**
 * MainController
 */
-class MainController 
+class MainController
 {
 	private $view;
 	private $config = array();
@@ -24,81 +24,160 @@ class MainController
 		//var_dump($config);
 	}
 
-	function home(){
+	/**
+	* Home
+	*/
+
+	function home()
+	{
 		echo $this->view->render('index', array('foo' => 'bar'));
 	}
 
-	function about(){
+	/**
+	* About
+	*/
+
+	function about()
+	{
 		//$db = new model\database\dbconnect($this->config);
-		
+
 		return $this->view->render('about-us', array('foo' => 'bar'));
 		// echo $this->view->render('course', array('foo' => 'bar'));
-		
+
 	}
 
-	function test(){
-		echo $this->view->render('test', array('foo' => 'bar'));
+	/**
+	* Test
+	*/
+
+	function test()
+	{
+		echo $this->view->render('test@admin', array('foo' => 'bar'));
 	}
 
-	function Coupon(){
+	/**
+	* Coupon
+	*/
+
+	function Coupon()
+	{
 		$_POST['action'];
 
 		$get_data = array($_POST['action']);
-		
+
 		header('Content-Type: application/json; charset=utf-8');
 
 		$json = json_encode($get_data);
-		
+
 		// return $this->view->render('index', array('foo' => $json));
 		// /header('Content-Type: text/html; charset=utf-8');
 		//echo $this->view->render('index', array('foo' => $json));
 	}
 
-	function cart(){
+	/**
+	* Cart
+	*/
+
+	function cart()
+	{
 		echo $this->view->render('cart', array('foo' => 'bar'));
 	}
 
-	function category(){
+	/**
+	* Category
+	*/
+
+	function category()
+	{
 		return $this->view->render('category', array('foo' => 'bar'));
 	}
+
+	/**
+	* Content Course
+	*/
 
 	function content_course(){
 		echo $this->view->render('content-course', array('foo' => 'bar'));
 	}
 
-	function course(){
+	/**
+	* Course
+	*/
+
+	function course()
+	{
 		echo $this->view->render('course', array('foo' => 'bar'));
 	}
 
-	function faq(){
+	/**
+	* Faq
+	*/
+
+	function faq()
+	{
 		echo $this->view->render('faq', array('foo' => 'bar'));
 	}
 
-	function history(){
+	/**
+	* History
+	*/
+
+	function history()
+	{
 		echo $this->view->render('history', array('foo' => 'bar'));
 	}
 
-	function payment(){
+	/**
+	* Payment
+	*/
+
+	function payment()
+	{
 		echo $this->view->render('payment', array('foo' => 'bar'));
 	}
 
-	function policy(){
+	/**
+	* Policy
+	*/
+
+	function policy()
+	{
 		echo $this->view->render('policy', array('foo' => 'bar'));
 	}
 
-	function teacher(){
+	/**
+	* Teacher
+	*/
+
+	function teacher()
+	{
 		echo $this->view->render('teacher', array('foo' => 'bar'));
 	}
 
-	function user_course(){
+	/**
+	* User Course
+	*/
+
+	function user_course()
+	{
 		echo $this->view->render('user-course', array('foo' => 'bar'));
 	}
 
-	function user(){
+	/**
+	* User
+	*/
+
+	function user()
+	{
 		echo $this->view->render('user', array('foo' => 'bar'));
 	}
 
-	function countdown(){
+	/**
+	* Count Down
+	*/
+
+	function countdown()
+	{
 		$db = new model\database\dbconnect($this->config);
 		$select = "SELECT * FROM countdown";
 		$result = $db->query($select);
@@ -115,6 +194,15 @@ class MainController
 		//return $json;
 	}
 
+
+	/**
+	* Admin
+	*/
+
+	function admin()
+	{
+			echo $this->view->render('index@admin', array('foo' => 'bar'));
+	}
 
 
 }

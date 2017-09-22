@@ -1,5 +1,5 @@
-<?php 
-require 'config/route.php'; 
+<?php
+require 'config/route.php';
 // require 'config/view.php';
 include 'controller/AboutController.php';
 include 'controller/MainController.php';
@@ -7,7 +7,7 @@ include 'controller/MainController.php';
 // define('APPLICATION_NAME', realpath(dirname(__DIR__) . '/../'));
 
 
-Route::add('/', 'MainController::home');
+$route::add('/', 'MainController::home');
 
 $route::add('/about', 'MainController::about');
 
@@ -41,5 +41,9 @@ $route::add('/user' , 'MainController::user');
 
 $route::add('/countdown' , 'MainController::countdown');
 
+$route::add('/admin' , 'MainController::admin');
 
+$route::add('/demo' , function (){
+  echo "404 Error";
+});
 ?>
