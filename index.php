@@ -3,6 +3,7 @@ require 'config/route.php';
 // require 'config/view.php';
 include 'controller/AboutController.php';
 include 'controller/MainController.php';
+include 'controller/AdminController.php';
 // define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../'));
 // define('APPLICATION_NAME', realpath(dirname(__DIR__) . '/../'));
 
@@ -41,7 +42,7 @@ $route::add('/user' , 'MainController::user');
 
 $route::add('/countdown' , 'MainController::countdown');
 
-$route::add('/admin' , 'MainController::admin');
+$route::add('/admin' , 'AdminController::admin');
 
 $route::add('/demo' , function (){
   echo "404 Error";

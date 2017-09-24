@@ -30,7 +30,7 @@ class MainController
 
 	function home()
 	{
-		echo $this->view->render('index', array('foo' => 'bar'));
+		return $this->view->render('index', array('foo' => 'bar'));
 	}
 
 	/**
@@ -44,15 +44,6 @@ class MainController
 		return $this->view->render('about-us', array('foo' => 'bar'));
 		// echo $this->view->render('course', array('foo' => 'bar'));
 
-	}
-
-	/**
-	* Test
-	*/
-
-	function test()
-	{
-		echo $this->view->render('test@admin', array('foo' => 'bar'));
 	}
 
 	/**
@@ -199,10 +190,10 @@ class MainController
 	* Admin
 	*/
 
-	function admin()
-	{
-			echo $this->view->render('index@admin', array('foo' => 'bar'));
-	}
+	// function admin()
+	// {
+	// 		echo $this->view->render('index@admin', array('foo' => 'bar'));
+	// }
 
 
 }
