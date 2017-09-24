@@ -1,6 +1,7 @@
 <?php
 require __DIR__ .'/../vendor/autoload.php';
 require __DIR__ .'/../config/view.php';
+require __DIR__ .'/../config/ajax.php';
 
 //test
 // $course = new model\courses\Course;
@@ -170,7 +171,7 @@ class MainController
 	function countdown()
 	{
 		$db = new model\database\dbconnect($this->config);
-		$select = "SELECT * FROM countdown";
+		$select = "SELECT * FROM _coupon";
 		$result = $db->query($select);
 		$get_data = array();
 		foreach ($result as $data) {
@@ -195,13 +196,14 @@ class MainController
 	// 		echo $this->view->render('index@admin', array('foo' => 'bar'));
 	// }
 
+	function test()
+	{
+			echo $this->view->render('test@test', array('foo' => 'bar'));
+	}
+
 
 }
 
-if(!empty($_POST) && isset($_POST['action']) && $_POST['action'] == 'countdown') {
-    $object = new MainController();
-    $object->countdown();
-}
 
 
 ?>
