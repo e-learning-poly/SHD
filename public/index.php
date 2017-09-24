@@ -784,7 +784,10 @@
 			  	type: "POST",
 			 	url: "controller/MainController.php",
 			  	data: { 
-			  		action : "countdown"
+			  		// note: ajax pass param to method of class Controller
+			  		name_controller : "MainController",
+			  		method : "countdown"
+			  		
 			  	},
               	success : function (response){
               		console.log(response);
