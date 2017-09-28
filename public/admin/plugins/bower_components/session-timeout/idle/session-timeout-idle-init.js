@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var UIIdleTimeout = function() {
     return {
         init: function() {
@@ -45,4 +46,53 @@ jQuery(document).ready(function() {
     onResume: function(){
         $(this).slideUp(); // hide the warning bar
     }
+=======
+var UIIdleTimeout = function() {
+    return {
+        init: function() {
+            var o;
+            $("body").append(""), $.idleTimeout("#idle-timeout-dialog", ".modal-content button:last", {
+                idleAfter: 5,
+                timeout: 3e4,
+                pollingInterval: 5,
+                keepAliveURL: "/keep-alive",
+                serverResponseEquals: "OK",
+                onTimeout: function() {
+                    window.location = "lock-screen.html"
+                },
+                onIdle: function() {
+                    $("#idle-timeout-dialog").modal("show"), o = $("#idle-timeout-counter"), $("#idle-timeout-dialog-keepalive").on("click", function() {
+                        $("#idle-timeout-dialog").modal("hide")
+                    })
+                },
+                onCountdown: function(e) {
+                    o.html(e)
+                }
+            })
+        }
+    }
+}();
+jQuery(document).ready(function() {
+    UIIdleTimeout.init()
+});
+
+/*$.idleTimeout('#idletimeout', '#idletimeout a', {
+    idleAfter: 5,
+    pollingInterval: 2,
+    keepAliveURL: 'keep.php',
+    serverResponseEquals: 'OK',
+    onTimeout: function(){
+        $(this).slideUp();
+        window.location = "lock-screen.html";
+    },
+    onIdle: function(){
+        $(this).slideDown(); // show the warning bar
+    },
+    onCountdown: function( counter ){
+        $(this).find("span").html( counter ); // update the counter
+    },
+    onResume: function(){
+        $(this).slideUp(); // hide the warning bar
+    }
+>>>>>>> b131e3337ca20ff99a98e6a25ce0e3ed956fe21f
 });*/

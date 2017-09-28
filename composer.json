@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
  	"autoload": 
 		{
@@ -6,4 +7,13 @@
 		    	"config\\" : "config"
 		    }
 		}
+=======
+{
+ 	"autoload": 
+		{
+		    "psr-4": { 
+		    	"model\\" : "model"
+		    }
+		}
+>>>>>>> b131e3337ca20ff99a98e6a25ce0e3ed956fe21f
 }

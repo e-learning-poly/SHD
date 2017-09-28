@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>  
 <html lang="en">
 <head>
@@ -55,3 +56,6 @@
 </body>
 </html>
 
+=======
+<?php echo '404 error'; ?>
+>>>>>>> b131e3337ca20ff99a98e6a25ce0e3ed956fe21f
