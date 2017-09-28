@@ -7,8 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'model\\' => array($baseDir . '/model'),
-<<<<<<< HEAD
     'config\\' => array($baseDir . '/config'),
-=======
->>>>>>> b131e3337ca20ff99a98e6a25ce0e3ed956fe21f
 );

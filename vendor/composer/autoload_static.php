@@ -11,13 +11,10 @@ class ComposerStaticInitf22ae3c525ae98c38e3c2e36de72a906
         array (
             'model\\' => 6,
         ),
-<<<<<<< HEAD
         'c' => 
         array (
             'config\\' => 7,
         ),
-=======
->>>>>>> b131e3337ca20ff99a98e6a25ce0e3ed956fe21f
     );
 
     public static $prefixDirsPsr4 = array (
@@ -25,13 +22,10 @@ class ComposerStaticInitf22ae3c525ae98c38e3c2e36de72a906
         array (
             0 => __DIR__ . '/../..' . '/model',
         ),
-<<<<<<< HEAD
         'config\\' => 
         array (
             0 => __DIR__ . '/../..' . '/config',
         ),
-=======
->>>>>>> b131e3337ca20ff99a98e6a25ce0e3ed956fe21f
     );
 
     public static function getInitializer(ClassLoader $loader)

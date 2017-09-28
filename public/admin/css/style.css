@@ -3871,11 +3871,7 @@ table.focus-on tbody tr.focused td {
 }
 /* Login- register pages */
 .login-register {
-<<<<<<< HEAD
   background: url(../plugins/images/login-register.jpg) no-repeat center center / cover !important;
-=======
-  background: url(../../plugins/images/login-register.jpg) no-repeat center center / cover !important;
->>>>>>> b131e3337ca20ff99a98e6a25ce0e3ed956fe21f
   height: 100%;
   position: fixed;
 }

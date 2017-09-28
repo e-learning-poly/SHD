@@ -1,14 +1,6 @@
-<<<<<<< HEAD
 RewriteEngine On
 RewriteBase /e-learning/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-=======
-RewriteEngine On
-RewriteBase /e-learning/
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
->>>>>>> b131e3337ca20ff99a98e6a25ce0e3ed956fe21f
 RewriteRule ^(.+)$ index.php?uri=$1 [QSA,L]

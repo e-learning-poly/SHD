@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 require __DIR__ .'/../vendor/autoload.php';
 //require __DIR__ .'/../config/view.php';
@@ -27,18 +26,3 @@ class AboutController
 	}
 
 }
-=======
-<?php
-/**
-* AboutController
-*/
-class AboutController 
-{
-	
-	function __construct(){}
-
-	function about(){
-		echo 'hello';
-	}
-}
->>>>>>> b131e3337ca20ff99a98e6a25ce0e3ed956fe21f
