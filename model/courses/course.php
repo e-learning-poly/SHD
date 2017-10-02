@@ -20,7 +20,11 @@ class Course
 	}
 
 	function getCourseJoinAuthor(){
+<<<<<<< HEAD
 		$query = "SELECT _courses.id_courses, _courses.course_name, _courses.course_gallery, _courses.course_price, _courses.course_describe, _courses.course_slug, _courses.course_start_day, _authors.author_name FROM _courses INNER JOIN _authors ON _courses.id_authors = _authors.id_authors ORDER BY _courses.id_courses ASC";
+=======
+		$query = "SELECT _courses.id_courses, _courses.course_name, _courses.course_gallery, _courses.course_price, _courses.course_describe, _courses.course_start_day, _authors.author_name FROM _courses INNER JOIN _authors ON _courses.id_authors = _authors.id_authors ORDER BY _courses.id_courses ASC";
+>>>>>>> origin/master
 
 		$result = $this->db->query($query);
 
@@ -50,6 +54,7 @@ class Course
     	return $results;
 	}
 
+<<<<<<< HEAD
 	public function getCourseSlug($slug){
 		$query = "SELECT _courses.id_courses, _courses.course_name, _courses.course_gallery, _courses.course_price, _courses.course_describe, _courses.id_categories, _courses.course_start_day, _authors.author_name, _authors.id_authors FROM _courses INNER JOIN _authors ON _courses.id_authors = _authors.id_authors WHERE _courses.course_slug = '$slug'";
     
@@ -60,6 +65,8 @@ class Course
     	return $results;
 	}
 
+=======
+>>>>>>> origin/master
 	public function deleteCourse($id){
 		$query = "DELETE FROM _courses WHERE id_courses = $id";
 

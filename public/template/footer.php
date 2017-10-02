@@ -55,4 +55,8 @@
 
 
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> origin/master

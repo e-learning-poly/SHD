@@ -1,11 +1,19 @@
 <?php include 'template/header.php'; ?>
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 	<section class="course pt-4 pb-3 mt-5 cart-info">
 		<div class="container">
 			<div class="row p-0 m-0">
 				<div class="col-md-12 p-0 m-0">
 					<div class="pull-left">
 						<p class="text-left p-0 m-0">
+<<<<<<< HEAD
 			              <a href="#">Trang chủ</a> <i class="fa fa-angle-right"></i> <a href="#">Design</a> <i class="fa fa-angle-right"></i> <a href="#"><?php echo $course[0]['course_name']; ?></a>
+=======
+			              <a href="#">Trang chủ</a> <i class="fa fa-angle-right"></i> <a href="#">Design</a> <i class="fa fa-angle-right"></i> <a href="#">Thiết kế photoshop</a>
+>>>>>>> origin/master
 			            </p>
 			            <h4 class="pt-1 m-0 font-weight-bold">Photoshop CC 2015</h4>
 					</div>

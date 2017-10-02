@@ -1,6 +1,10 @@
 <?php
 namespace config\basic;
+<<<<<<< HEAD
 use config\basic\Route;
+=======
+
+>>>>>>> origin/master
 class View
 {
     function render($file, $variables = array() )
@@ -42,6 +46,7 @@ class View
           }
           else
           {
+<<<<<<< HEAD
             include_once '404.php';
           }
         }     
@@ -60,8 +65,25 @@ class View
         
     //   }
     // }
+=======
+            include_once 'public/404.php';
+          }
+        }         
+        
+
+        $renderedView = ob_get_clean();
+        echo $renderedView;
+    }
+
+
+>>>>>>> origin/master
 }
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/master
 ?>

@@ -55,7 +55,11 @@ class AdminController
 		);
 
 		$admin = new model\users\users;
+<<<<<<< HEAD
 		$admin = $admin->loginAdmin($_SESSION['user']['username'] , $_SESSION['user']['password']);
+=======
+		$admin = $admin->loginUser($_SESSION['user']['username'] , $_SESSION['user']['password']);
+>>>>>>> origin/master
 
 		//check role admin, ajax data
 		if($admin == 1){

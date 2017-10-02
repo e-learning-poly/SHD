@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 	define('APP_PATH', dirname(__DIR__));
 	// echo APP_PATH;
@@ -24,6 +25,29 @@
 	<script src="public/js/scripts.js"></script>
 	<script src="public/js/slick.min.js"></script>
 	<title>E-Learning</title>
+=======
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" type="image/x-icon" href="public/images/favicon.ico">
+  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/css/font-awesome.min.css">
+  <link rel="stylesheet" href="public/css/slick.css">
+  <link rel="stylesheet" href="public/css/slick-theme.css">
+  <link rel="stylesheet" href="public/css/animate.css">
+  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="stylesheet" href="public/css/responsive.css">
+  <script src="public/js/jquery-3.2.1.min.js"></script>
+  <script src="public/js/tether.min.js"></script>
+  <script src="public/js/bootstrap.min.js"></script>
+  
+  <script src="public/js/scripts.js"></script>
+  <script src="public/js/slick.min.js"></script>
+  <title>E-Learning</title>
+>>>>>>> origin/master
 </head>
 <body>
 	<header id="header" class="el-header bg-inverse fixed-top" >

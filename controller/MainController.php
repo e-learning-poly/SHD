@@ -15,7 +15,10 @@ class MainController
 {
 	private $view;
 	private $config = array();
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 	function __construct()
 	{
 		$view = new config\basic\View();
@@ -26,10 +29,13 @@ class MainController
 		//var_dump($config);
 	}
 
+<<<<<<< HEAD
 	function demo(){
 		echo $this->view->render('404', array('courses' => 'a'));
 	}
 
+=======
+>>>>>>> origin/master
 	/**
 	* Home
 	*/
@@ -38,7 +44,10 @@ class MainController
 	{
 		$courses = new  model\courses\Course;
 		$courses = $courses->getCourseJoinAuthor();
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 		echo $this->view->render('index', array('courses' => $courses));
 	}
 
@@ -49,6 +58,10 @@ class MainController
 	function about()
 	{
 		//$db = new model\database\dbconnect($this->config);
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 		return $this->view->render('about-us', array('foo' => 'bar'));
 		// echo $this->view->render('course', array('foo' => 'bar'));
 
@@ -103,6 +116,7 @@ class MainController
 	* Course
 	*/
 
+<<<<<<< HEAD
 	function course($slug)
 	{
 
@@ -124,6 +138,11 @@ class MainController
 		}
 		
 		
+=======
+	function course()
+	{
+		echo $this->view->render('course', array('foo' => 'bar'));
+>>>>>>> origin/master
 	}
 
 	/**

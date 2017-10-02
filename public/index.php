@@ -221,6 +221,7 @@
 		        </div>
 	        	<div class="clearfix mt-3 mb-3"></div>
 
+<<<<<<< HEAD
 	        	<?php 
 	        		
 	        		foreach ($courses as $course): 
@@ -229,6 +230,11 @@
 	            <div class="gallery-product col-md-6 col-lg-3 filter psd mb-c wow fadeInLeft animated" data-wow-delay=".75s">
 	            	<a href="<?php echo "course/".$course['course_slug']; ?>">
 
+=======
+	        	<?php foreach ($courses as $course): ?>
+	            <div class="gallery-product col-md-6 col-lg-3 filter psd mb-c wow fadeInLeft animated" data-wow-delay=".75s">
+	            	<a href="">
+>>>>>>> origin/master
 		            	<div class="card">
 		            		<div class="box-img">
 		            			<div class="hover-background text-center">

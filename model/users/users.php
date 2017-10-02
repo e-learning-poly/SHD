@@ -50,7 +50,11 @@ class users
   /*
    * Đăng nhập
    */
+<<<<<<< HEAD
    function loginAdmin($username,$password)
+=======
+   function loginUser($username,$password)
+>>>>>>> origin/master
    {
 
       $passwords = md5($password);

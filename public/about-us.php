@@ -59,12 +59,21 @@
 		          <h2>Những ai đã sử dụng E-learning?</h2>
 		          <p>Ngoài việc giúp những người học cá nhân đạt được các mục tiêu cá nhân và nghề nghiệp, chúng tôi cung cấp các khóa học linh hoạt, hiệu quả về chi phí cho doanh nghiệp, trường học hoặc tổ chức của chính phủ. Dưới đây là một số ví dụ về một số tổ chức sử dụng E-learning.</p>
 		          <div class="col-md-12 el-about">
+<<<<<<< HEAD
 		            <img src="public/images/adobe.png" alt="Adobe" class="rounded el-about-image">
 		            <img src="public/images/fullsail.png" alt="Fullsail" class="rounded el-about-image">
 		            <img src="public/images/patagonia.png" alt="Patagonia" class="rounded el-about-image">
 		            <img src="public/images/nbc.png" alt="NBC" class="rounded el-about-image">
 		            <img src="public/images/usc.png" alt="USC" class="rounded el-about-image">
 		            <img src="public/images/usge.png" alt="USGE" class="rounded el-about-image">
+=======
+		            <img src="images/adobe.png" alt="Adobe" class="rounded el-about-image">
+		            <img src="images/fullsail.png" alt="Fullsail" class="rounded el-about-image">
+		            <img src="images/patagonia.png" alt="Patagonia" class="rounded el-about-image">
+		            <img src="images/nbc.png" alt="NBC" class="rounded el-about-image">
+		            <img src="images/usc.png" alt="USC" class="rounded el-about-image">
+		            <img src="images/usge.png" alt="USGE" class="rounded el-about-image">
+>>>>>>> origin/master
 		          </div>
 		        </div>
 		        <div class="col-md-11">
